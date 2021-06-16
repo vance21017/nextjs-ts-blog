@@ -1,6 +1,5 @@
 ## Vance's portfolio site!
 
-Hello World
 ---
 
 This is a cool new site i'm creating using Next.js and Material UI.
