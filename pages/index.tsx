@@ -12,7 +12,7 @@ export default function Home() {
           name="description"
           content="Welcome to developer Vance Denson's website"
         />
-        <link rel="icon" href="/favicon-lg.png" type="image/x-icon" />
+        <link rel="icon" href="/favicon-sm.png" type="image/x-icon" />
       </Head>
       <Typography gutterBottom variant="h6">
         Home Page
