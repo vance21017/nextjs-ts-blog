@@ -1,6 +1,5 @@
 ## Vance's portfolio site!
 
----
 Hello World
 ---
 
@@ -12,4 +11,5 @@ Current Roadmap
 - Create projects page as a fun sandbox to practice and show off new things
 - Create private login page for users
 
+```Away I go!```
 ![Let's code!](/public/computes.jpg)
