@@ -12,4 +12,4 @@ Current Roadmap
 - Create projects page as a fun sandbox to practice and show off new things
 - Create private login page for users
 
-![Let's code!](/computes.jpg)
+![Let's code!](/public/computes.jpg)
