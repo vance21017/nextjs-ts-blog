@@ -1,1 +1,2 @@
-/// <reference types="@mdx-js/loader" />
+///<reference types="@mdx-js/loader" />
+declare module '@mdx-js/react';

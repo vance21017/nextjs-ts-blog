@@ -58,7 +58,7 @@ export default function LeftDrawer({ children }) {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
-        {["home", "blog", "projects"].map((text, index) => (
+        {["/home", "/blog", "/projects"].map((text, index) => (
           <Link href={index === 0 ? "/" : text}>
             <ListItem button key={text}>
               <ListItemIcon>
@@ -66,7 +66,7 @@ export default function LeftDrawer({ children }) {
                 {index === 1 ? <MenuBookTwoToneIcon /> : undefined}
                 {index === 2 ? <SettingsEthernetTwoToneIcon /> : undefined}
               </ListItemIcon>
-              <ListItemText primary={text} />
+              <ListItemText primary={`${text.substr(1, text.length)}`} />
             </ListItem>
           </Link>
         ))}

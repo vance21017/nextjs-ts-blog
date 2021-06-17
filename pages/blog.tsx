@@ -4,7 +4,12 @@ import MenuBook from "@material-ui/icons/MenuBook";
 export default function blog() {
   return (
     <>
-      <Typography variant="h6">Blog Page</Typography>
+      <Typography variant="h3" color="textPrimary" align="center">
+        Blog Page
+      </Typography>
     </>
   );
+}
+
+
 }
