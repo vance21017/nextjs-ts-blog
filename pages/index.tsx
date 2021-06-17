@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { Button, Typography } from "@material-ui/core";
+import { Button, Typography, Grid } from "@material-ui/core";
 import MenuBook from "@material-ui/icons/MenuBook";
 import Link from "next/link";
 
@@ -14,14 +14,29 @@ export default function Home() {
         />
         <link rel="icon" href="/favicon-sm.png" type="image/x-icon" />
       </Head>
-      <Typography gutterBottom variant="h6">
-        Home Page
-      </Typography>
-      <Link as="a" href="/blog">
-        <Button variant="contained" color="primary" startIcon={<MenuBook />}>
-          View My Blog
-        </Button>
-      </Link>
+      <Grid container direction="column" align="center">
+        <Grid item>
+          <Typography
+            variant="h3"
+            color="textPrimary"
+            align="center"
+            gutterBottom
+          >
+            Home Page
+          </Typography>
+        </Grid>
+        <Grid item>
+          <Link as="a" href="/blog">
+            <Button
+              variant="contained"
+              color="primary"
+              startIcon={<MenuBook />}
+            >
+              View My Blog
+            </Button>
+          </Link>
+        </Grid>
+      </Grid>
     </>
   );
 }

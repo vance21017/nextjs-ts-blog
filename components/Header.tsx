@@ -2,46 +2,48 @@ import {
   Toolbar,
   Divider,
   IconButton,
-  Menu,
-  MenuItem,
   Typography,
   Button,
-  makeStyles,
+  Grid,
 } from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
 import LockOpen from "@material-ui/icons/LockOpen";
 import LeftDrawer from "../components/LeftDrawer";
 
-export const useStyles = makeStyles((theme) => {
-  {
-    menu: {
-    }
-    title: {
-      flexGrow: "1";
-    }
-    login: {
-    }
-  }
-});
-
 export default function Header() {
-  const classes = useStyles();
-
   return (
     <>
       <Toolbar>
-        <LeftDrawer>
-          <IconButton>
-            <MenuIcon />
-          </IconButton>
-        </LeftDrawer>
-        <Typography variant="h4" className={classes.title}>
-          Welcome to Vance's Site
-        </Typography>
-        <Button variant="outlined" endIcon={<LockOpen />} disabled>
-          Login
-        </Button>
-        <Typography variant="overline">coming soon</Typography>
+        <Grid container direction="row" xs="10">
+          <Grid item xs="2" align="left" justify="center">
+            <LeftDrawer>
+              <IconButton>
+                <MenuIcon />
+              </IconButton>
+            </LeftDrawer>
+          </Grid>
+          <Grid item justify="center" align="center" xs="10">
+            <Typography variant="h4" color="primary">
+              Welcome to Vance's Site
+            </Typography>
+          </Grid>
+        </Grid>
+        <Grid
+          container
+          spaceing="space-between"
+          diection="column"
+          xs="2"
+          alignContent="flex-end"
+        >
+          <Grid item>
+            <Button variant="outlined" endIcon={<LockOpen />} disabled>
+              Login
+            </Button>
+          </Grid>
+          <Grid item>
+            <Typography variant="overline">coming soon</Typography>
+          </Grid>
+        </Grid>
       </Toolbar>
       <Divider />
     </>
